@@ -1,0 +1,942 @@
+/* TYPOGRAPHY */
+h1 {
+  font-family: orpheuspro, serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 80px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: orpheuspro, serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  line-height: 1.5em;
+  font-size: 2.5vw;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  font-family: orpheuspro, serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 2.5vw;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h4 {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: black;
+  font-size: 22px;
+}
+
+h5 {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+/* subtitle below the title */
+h6 {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75em;
+  font-size: 1vw;
+  color: #535353;
+}
+
+p {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+nav a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #D8C041;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#about, #resume, #contact {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+/* END TYPOGRAPHY */
+body {
+  max-width: 100%;
+  margin: 0;
+  background-color: #F7F6F0;
+  transition: all 0.65s ease;
+}
+
+.changeColor {
+  background: #D3D0C3;
+}
+
+#nav_rule {
+  border-top: 1.35px solid black;
+  position: relative;
+  top: -1vh;
+}
+
+/*START NAV */
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 8.5vh;
+  flex-direction: row;
+}
+
+#logo {
+  display: flex;
+  align-self: center;
+  max-width: 10.5vw;
+  width: auto;
+  height: auto;
+  position: absolute;
+  padding: 0vh 2vw 0 2vw;
+}
+
+.menu {
+  display: flex;
+  height: auto;
+  width: 35vw;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: -30vw;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  /*  background-color: lightblue; */
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+  padding: 0 20px;
+}
+
+#about, #resume, #contact {
+  display: inline-block;
+  font-size: 0.8vw;
+  /* padding: 0 40px; */
+}
+
+/* END NAV */
+/*ABOVE THE FOLD*/
+#above_fold {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 1%;
+}
+
+.left_container {
+  max-width: 50%;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero_title {
+  max-width: 70%;
+  width: auto;
+  position: relative;
+  left: 20%;
+  top: 12%;
+  height: auto;
+  align-items: flex-start;
+}
+
+.hero_title h2 {
+  position: relative;
+  display: block;
+}
+
+#subtitle h6 {
+  position: relative;
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.doNotWrap {
+  white-space: nowrap;
+}
+
+.right_container {
+  max-width: 50%;
+  width: auto;
+  height: auto%;
+  display: flex;
+  justify-content: center;
+
+}
+
+#hero_img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+    animation: bounceArrow 1.5s ease-out;
+    animation-delay: .125s;
+}
+
+
+#hero_img img {
+  position: relative;
+  max-width: 80%;
+  height: auto;
+  width: auto;
+}
+
+@keyframes bounceArrow {
+  from {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: 40px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+
+
+
+/* END ABOVE FOLD */
+/* BELOW FOLD */
+.below_fold {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0vh;
+}
+
+#work_title {
+  max-width: 10vw;
+  width: auto;
+  display: block;
+  position: relative;
+  text-align: left;
+}
+
+#work_title>h3 {
+  height: auto;
+  width: auto;
+  max-width: 20vw;
+  max-height: 3vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.work_container {
+  display: block;
+  max-width: 30vw;
+  width: auto;
+  height: 60vh;
+  max-height: 60vh;
+  float: left;
+  position: relative;
+  left: 7%;
+}
+
+.work_container ul {
+  list-style-type: none;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  max-width: 22vw;
+  width: auto;
+  height: 50vh;
+  display: block;
+  position: relative;
+  left: .5vw;
+  text-align: left;
+  top: 1vh;
+}
+
+.work_container>ul>li>a {
+  color: black;
+  text-decoration: none;
+}
+
+#wing {
+  height: auto;
+  width: auto;
+  max-width: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 4vw;
+}
+
+#wing h5 {
+  position: relative;
+}
+
+#wing img {
+  position: relative;
+  left: 2vw;
+  max-width: 1.5vw;
+  width: auto;
+  height: auto;
+}
+
+#waylien img {
+  position: relative;
+  left: 2vw;
+  max-width: 1.5vw;
+  width: auto;
+  height: auto;
+}
+
+#oxfam img {
+  position: relative;
+  left: 2vw;
+  max-width: 1.5vw;
+  width: auto;
+  height: auto;
+}
+
+.work_container>ul>li>a>.project_display {
+  display: none;
+  max-width: 32vw;
+  width: auto;
+  height: auto%;
+  float: left;
+  position: absolute;
+  top: -10vh;
+  left: 40vw;
+  padding: 12%:
+}
+
+.work_container>ul>li>a:hover>.project_display {
+  display: block;
+  filter: drop-shadow(0px 2px 3px #E6E5DB);
+  max-width: 50%;
+  width: auto;
+  height: auto%;
+  padding: 10%;
+}
+
+.project_display img {
+  display: block;
+  max-width: 32vw;
+  width: auto;
+  height: auto;
+  position: relative;
+  left: 2vw;
+}
+
+.work_container>ul>li>a:hover h5:hover {
+  color: #BFA100;
+  font-family: franklin-gothic-urw, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#waylien {
+  height: auto;
+  width: auto;
+  max-width: 20vw;
+  max-height: 4vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#oxfam {
+  height: auto;
+  width: auto;
+  max-width: 20vw;
+  max-height: 4vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.regular_rule  {
+  height: 1px;
+  background-color: black;
+  width: 20vw;
+  position: relative;
+}
+
+/* END Below Fold */
+/* MOBILE DISPLAY: NONE */
+#hamburger {
+  display: none;
+}
+
+.mobile_hero_title {
+  display: none;
+}
+
+.mobile_top_container {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+.mobile_below_fold {
+  display: none;
+}
+
+/* -------------- MEDIA QUERIES FOR MOBILE SMALLER THAN 668PX --------------- */
+
+
+@media only screen and (max-width: 43em) {
+
+  /* ABOVE THE FOLD */
+  nav {
+    position: relative;
+    max-width: 100vw;
+    width: auto;
+    height: auto;
+    max-height: 20vh;
+    /* background-color: pink; */
+  }
+
+  #logo {
+    max-width: 30vw;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    left: -2.5vw;
+    /*  background-color: green; */
+  }
+
+  .menu {
+    position: relative;
+    width: 45vw;
+    left: 5vw;
+    /*  background-color: yellow; */
+  }
+
+  #about {
+    width: auto;
+    position: relative;
+    right: 6vw;
+    font-size: 2.25vw;
+    padding: 1vh 0;
+    /*   background-color: teal; */
+    font-size: .8em;
+  }
+
+  #resume {
+    width: auto;
+    position: relative;
+    font-size: 2.25vw;
+    padding: 1vh 0 0 0;
+    font-size: .8em;
+  /*  background-color: blue; */
+
+  }
+
+  #nav_rule {
+    display: block;
+    position: relative;
+    top: -1vh;
+    max-width: 100vw;
+  }
+
+  #contact, #hero_img, #above_fold {
+    display: none;
+  }
+
+  .mobile_top_container {
+    display: block;
+    height: 53vh;
+    width: auto;
+  }
+
+  .mobile_hero_title {
+    display: block;
+    font-size: 6vw;
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    position: relative;
+    top: 2vh;
+  }
+
+  .mobile_hero_title h2 {
+    font-size: 7vw;
+    line-height: 5.5vh;
+  }
+
+  #mobile_subtitle h6 {
+    font-size: 3.25vw;
+    font-weight: 400;
+    letter-spacing: .125vw;
+    line-height: 3vh;
+    /*  background-color: yellow; */
+    position: relative;
+  }
+
+  #mobile_subtitle {
+    /*  background-color: green; */
+    height: 18vh;
+    position: relative;
+  }
+
+  #mobile_subtitle a {
+    list-style: none;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-style: normal;
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: .145vw;
+    position: relative;
+    color: #D8C041;
+    width: 20vw;
+    text-decoration: none;
+    bottom: 2vh;
+    /*  background-color: blue; */
+  }
+
+  #mobile_subtitle a:active {
+    text-decoration: none;
+    color: #D8C041;
+  }
+
+  /* NAV BAR */
+  /* BELOW FOLD */
+  .mobile_below_fold {
+    height: 50vh;
+    max-width: 100vw;
+    width: auto;
+    display: block;
+    position: relative;
+    top: -1vh;
+    /* background-color: beige; */
+  }
+
+  .mobile_work_container {
+    display: block;
+    width: auto;
+    height: 35vh;
+    position: relative;
+    top: 1vh;
+    /* background-color: skyblue; */
+  }
+
+  .mobile_work_container ul {
+    height: 35vh;
+    width: 70vw;
+    display: block;
+    position: relative;
+    top: 2vh;
+    list-style-type: none;
+  }
+
+  .mobile_work_container>ul>li>a {
+    text-decoration: none;
+    color: black !important;
+  }
+
+  .mobile_work_container ul li a:active {
+    color: #D8C041;
+  }
+
+  .project_display img {
+    display: none;
+  }
+
+  .work_container, .below_fold {
+    display: none;
+  }
+
+  #work_title {
+    /*  background-color: pink; */
+    max-width: 26vw;
+    height: 5vh;
+    position: relative;
+    left: 9vw;
+    top: 1.5vh;
+  }
+
+  #work_title h3 {
+    font-size: 7vw;
+    position: relative;
+    width: auto;
+    max-height: 3vh;
+    /*  background-color: grey; */
+  }
+
+  .mobile_work_container ul li {
+    width: auto;
+    height: 7vh;
+    /*  background-color: red; */
+    position: relative;
+  }
+
+  #wing {
+    display: block;
+    max-width: 80vw;
+    width: auto;
+    max-height: 7vh;
+    height: auto;
+    position: relative;
+
+    margin: 2vh 0;
+  }
+
+  #waylien, #oxfam {
+    display: block;
+    max-width: 80vw;
+    width: auto;
+    max-height: 7vh;
+    height: auto;
+    position: relative;
+
+    margin: 1vh 0;
+  }
+
+  #wing a:active, #waylien a:active, #oxfam a:active {
+    color: #D8C041;
+  }
+
+  #wing a, #waylien a, #oxfam a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .mobile_work_container h5 {
+    font-size: 3.5vw;
+    /*  background-color: green; */
+    display: inline-block;
+    position: relative;
+    bottom: 2vh;
+  }
+
+
+  #wing h5, #waylien h5, #oxfam h5 {
+    position: relative;
+    bottom:.75vh;
+  }
+
+  #wing img {
+    position: relative;
+    bottom: .75vh;
+    left: 7vw;
+    max-width: 4vw;
+    width: auto;
+    height: auto;
+    /*background-color: yellow; */
+  }
+
+  #waylien img {
+    position: relative;
+    bottom: .75vh;
+    left: 6.5vw;
+    max-width: 4vw;
+    width: auto;
+    height: auto;
+    /*  background-color: yellow; */
+  }
+
+  #oxfam img {
+    position: relative;
+    bottom: .75vh;
+    left: 8vw;
+    max-width: 4vw;
+    width: auto;
+    height: auto;
+    /*background-color: yellow; */
+  }
+
+  .regular_rule {
+    display: block;
+    position: relative;
+    width: 70vw;
+  }
+
+.changeColor {
+  background: #F7F6F0;
+}
+  /* BELOW FOLD */
+}
+/* END MOBILE MEDIA QUERIES: max-width: 43em */
+
+
+
+
+/*------------ MEDIA QUERIES FOR TABLET BETWEEN 668PX AND 992PX -------------*/
+
+@media only screen and (min-width: 43em) and (max-width: 62em) {
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+  body {
+    max-height: 100vh;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
+  .menu {
+    position: relative;
+    width: 50vw;
+    left: 10vw;
+  }
+
+  #about {
+    width: auto;
+    position: relative;
+    left: -3vw;
+    font-size: 2.25vw;
+    padding: 1vh 0;
+     font-size: 1em;
+    /*   background-color: teal; */
+  }
+
+  #resume {
+    width: auto;
+    position: relative;
+    font-size: 2.25vw;
+    padding: 1vh 0 0 0;
+    left: 1vw;
+         font-size: 1em;
+ }
+
+ #contact {
+   width: auto;
+   position: relative;
+   font-size: 2.25vw;
+   padding: 1vh 0 0 0;
+   left: 5vw;
+        font-size: 1em;
+ }
+
+ #subtitle_br {
+   display: none;
+ }
+
+ #logo {
+   max-width: 20vw;
+   width: auto;
+   height: auto;
+   display: inline-block;
+   position: relative;
+   left: -8.75vw;
+   /*  background-color: green; */
+ }
+
+
+  #above_fold {
+    height: 40vh;
+    padding: 0;
+    position: relative;
+  /*  background-color: lightgreen; */
+  }
+
+#hero_img {
+  top: 1rem;
+  left: 1rem;
+  max-width: 40vw;
+}
+  #hero_img img {
+    max-width: 100%;
+  }
+
+.left_container {
+  max-width: 55%;
+}
+
+  .hero_title {
+    width: 80vw;
+    max-width: 48vw;
+    position: relative;
+    left: 4vw;
+    margin: 0 auto;
+    padding-left: 2vw;
+    top: 5vh;
+
+  }
+
+.right_container {
+  position: relative;
+  max-width: 45%;
+  left: 5vw;
+}
+
+
+.hero_title h2 {
+    font-size: 3.5vw;
+    margin: 0;
+  }
+
+#subtitle {
+  width: 40vw;
+}
+
+#subtitle h6 {
+    font-size: 1.75vw;
+    }
+
+.below_fold {
+  height: 50vh;
+/* background-color: beige; */
+  }
+
+.work_container {
+/*  background-color: gold; */
+  position: absolute;
+  left: 0vw;
+  width: 100%;
+  max-width: none;
+}
+
+.work_container>ul>li>a:hover>.project_display {
+  display: none;
+}
+
+#work_title h3 {
+  font-size: 3.5vw;
+}
+
+.work_container ul {
+  max-width: none;
+  height: auto;
+}
+
+#wing, #waylien, #oxfam {
+  max-width: none;
+  width: 50vw;
+  max-height: 10vh;
+  height: auto;
+  margin: 0;
+/*  background-color: pink; */
+}
+
+#wing h5, #waylien h5, #oxfam h5 {
+  font-size: 2vw;
+}
+
+.regular_rule {
+  width: 37vw;
+}
+}
+
+/*-------- END MEDIA QUERIES FOR TABLET BETWEEN 668PX AND 992PX -------------*/
+
+
+
+
+
+/*----------- MEDIA QUERIES FOR TABLET BETWEEN 992PX AND 1312PX -------------*/
+@media only screen and (min-width: 62em) and (max-width: 82em) {
+
+  #nav_rule {
+    border-top: 1.35px solid black;
+    position: relative;
+    top: -1vh;
+  }
+
+  /*START NAV */
+/*  nav {
+    height: 7vh;
+    background-color: pink;
+  }
+  */
+
+  #logo {
+    max-width: 11vw;
+      padding: .5vh 2vw 0 2vw;
+  }
+
+  .menu {
+
+}
+  #about, #resume, #contact {
+    display: inline-block;
+    font-size: 1vw;
+    /* padding: 0 40px; */
+  }
+
+
+#above_fold {
+  height: 78vh;
+}
+
+.below_fold {
+
+  height: 80vh;
+}
+
+#hero_img img {
+  left: 2.5vw;
+}
+
+.hero_title {
+  position: relative;
+  top: 15vh;
+
+}
+
+.hero_title h2 {
+    font-size: 2.5vw;
+    margin: 0;
+  }
+
+#subtitle {
+  width: 40vw;
+}
+
+#subtitle h6 {
+    font-size: 1.25vw;
+    }
+
+.work_container {
+  top: 5vh;
+}
+
+}
